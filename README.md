@@ -5,6 +5,8 @@ Welcome to my Projects repository! This repository contains a collection of codi
 ## Table of Contents
 
 - [Inventory Management System](#inventory-management-system)
+- [Profile](#profile)
+- [Treasure Hunt](#treasure-hunt)
 
 
 ## Inventory Management System
