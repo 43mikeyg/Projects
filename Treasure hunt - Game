@@ -1,0 +1,55 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Tue Jun  7 15:03:58 2022
+
+@author: Michael Green
+"""
+import time
+print('''
+*******************************************************************************
+          |                   |                  |                     |
+ _________|________________.=""_;=.______________|_____________________|_______
+|                   |  ,-"_,=""     `"=.|                  |
+|___________________|__"=._o`"-._        `"=.______________|___________________
+          |                `"=._o`"=._      _`"=._                     |
+ _________|_____________________:=._o "=._."_.-="'"=.__________________|_______
+|                   |    __.--" , ; `"=._o." ,-"""-._ ".   |
+|___________________|_._"  ,. .` ` `` ,  `"-._"-._   ". '__|___________________
+          |           |o`"=._` , "` `; .". ,  "-._"-._; ;              |
+ _________|___________| ;`-.o`"=._; ." ` '`."\` . "-._ /_______________|_______
+|                   | |o;    `"-.o`"=._``  '` " ,__.--o;   |
+|___________________|_| ;     (#) `-.o `"=.`_.--"_o.-; ;___|___________________
+____/______/______/___|o;._    "      `".o|o_.--"    ;o;____/______/______/____
+/______/______/______/_"=._o--._        ; | ;        ; ;/______/______/______/_
+____/______/______/______/__"=._o--._   ;o|o;     _._;o;____/______/______/____
+/______/______/______/______/____"=._o._; | ;_.--"o.--"_/______/______/______/_
+____/______/______/______/______/_____"=.o|o_.--""___/______/______/______/____
+/______/______/______/______/______/______/______/______/______/______/[TomekK]
+*******************************************************************************
+''')
+
+print("Welcome to find the Pirate's Booty")
+time.sleep(2)
+print("Want to be rich Mate? Then navigate yourself to the loot!")
+time.sleep(2)
+
+choice1 = input("Choose your direction either left or right\n").lower()
+
+if choice1 == "left":
+    time.sleep(2)
+    choice2 = input('You have chose to walk across the sand and came to a lake will you wait for a boat or will you swim type "wait" to wait or type "swim" to swim across.\n').lower()
+    if choice2 == "wait":
+        time.sleep(2)
+        choice3 = input("After waiting and staying dry a boat floats along which takes you to a cave with 3 entrances. One rocky, one firey, one icey. Which entrance do you choose?\n").lower()
+        if choice3 == "firey":
+            time.sleep(2)
+            print("You are a daring adventurer and will walk through fire for what you want. You Win!")
+        elif choice3 == "icey":
+            print("As you exit the boat and walk through ice you begin to get colder and colder until your freeze in-place. Game Over man!")
+        elif choice3 == "rocky":
+            print("After exiting the boat you walk into the entrance of the rocky cave. Bats fly out and an earthquake strikes bringing down boulders blocking your entrance and crushing you in the wake. Game Over man!")
+        else: 
+            print("That was not a direction Game Over man!")
+    else: print("Game over man!")
+else: 
+    print("Game over man!")
